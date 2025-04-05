@@ -1,0 +1,60 @@
+{
+  "name": "Noir & Blanc",
+  "short_name": "NoirBlanc",
+  "description": "Explora nuestra exclusiva colección de moda en blanco y negro.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "lang": "es",
+  "dir": "ltr",
+  "scope": "/",
+  "categories": ["compras", "moda", "estilo de vida"],
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/ico",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon.webp",
+      "sizes": "400x400",
+      "type": "image/png",
+      "purpose": "any"
+
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "icons/ventas.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ventas.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Colección",
+      "short_name": "Colección",
+      "description": "Explorar la colección de moda",
+      "url": "/#productos",
+      "icons": [{ "src": "icons/ventas.png", "sizes": "512x512", "type": "image/png" }]
+    },
+    {
+      "name": "Novedades",
+      "short_name": "Novedades",
+      "description": "Ver las últimas tendencias",
+      "url": "/#novedades",
+      "icons": [{ "src": "icons/ventas.png", "sizes": "512x512", "type": "image/png" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
