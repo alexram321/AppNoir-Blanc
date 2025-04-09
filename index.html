@@ -1,81 +1,49 @@
+<!-- home.html -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Noir & Blanc</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="script.js" defer></script>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="manifest" href="manifest.json">
-    
-        <!-- Agregar Favicon ⚪ -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-    </head>
-<body class="bg-gray-100" style="font-family: 'Playfair Display', serif;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noir et Blanc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col justify-between h-screen bg-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 font-serif text-2xl font-bold border-b">
+    <span>noir et blanc</span>
+    <button class="text-xl">🔍</button>
+  </header>
 
-    <!-- Menú de Navegación -->
-    <header class="bg-white fixed w-full top-0 shadow-md z-50">
-
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
-            <div class="text-2xl font-bold">Noir & Blanc</div>
-            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
-                ☰
-            </button>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" class="text-black font-medium hover:text-gray-500">Inicio</a>
-                <a href="#productos" class="text-black font-medium hover:text-gray-500">Colección</a>
-                <a href="#" class="text-black font-medium hover:text-gray-500">Novedades</a>
-                <a href="#" class="text-black font-medium hover:text-gray-500">Contacto</a>
-            </nav>
-        </div>
-
-        <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden absolute bg-white w-full shadow-md">
-            <a href="#" class="block text-center py-4 text-black border-b hover:bg-gray-100">Inicio</a>
-            <a href="#productos" class="block text-center py-4 text-black border-b hover:bg-gray-100">Colección</a>
-            <a href="#" class="block text-center py-4 text-black border-b hover:bg-gray-100">Novedades</a>
-            <a href="#" class="block text-center py-4 text-black hover:bg-gray-100">Contacto</a>
-        </div>
-    </header>
-
-    <!-- Sección Principal con Imagen a la Derecha -->
-    <section class="h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6">
-        <!-- Texto -->
-        <div class="w-full md:w-1/2">
-            <h1 class="text-6xl md:text-8xl font-bold">Noir & Blanc</h1>
-            <p class="text-lg md:text-2xl text-gray-600 mt-3">Descubre nuestra colección exclusiva de moda</p>
-            <a href="#productos" class="mt-6 px-6 py-3 bg-black text-white text-lg rounded hover:bg-gray-800 transition inline-block">
-                Explorar Colección
-            </a>
-        </div>
-
-        <!-- Imagen en la Mitad Derecha -->
-        <div class="hidden md:block w-1/2">
-            <img src="https://i.blogs.es/ddbb9c/sfera-blanco-negro-2020-05/1366_2000.jpeg" alt="Imagen de Moda" class="w-full h-auto object-cover">
-        </div>
+  <!-- Contenido -->
+  <main class="p-4 flex-1 overflow-auto">
+    <section>
+      <h2 class="text-lg font-semibold mb-2">Novedades</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="border rounded-lg h-32"></div>
+        <div class="border rounded-lg h-32"></div>
+      </div>
+      <div class="flex justify-end mt-2">
+        <button class="text-2xl">▶</button>
+      </div>
     </section>
 
-    <!-- Sección de Productos con Animación -->
-    <section id="productos" class="py-20 text-center">
-        <h2 class="text-4xl font-bold mb-8">Nuestros Productos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
-            <div class="producto fade-in bg-white shadow-lg p-6 rounded-lg">
-                <img src="https://static.zara.net/assets/public/6074/d892/25c642688c3f/e572e958f95e/08246046718-p/08246046718-p.jpg?ts=1738839881321&w=1500" alt="Producto 1" class="mx-auto mb-4">
-                <p>Producto 1</p>
-            </div>
-            <div class="producto fade-in bg-white shadow-lg p-6 rounded-lg">
-                <img src="https://static.zara.net/assets/public/36fd/c059/92d247d2bc3e/9464966b687f/09632253718-000-p/09632253718-000-p.jpg?ts=1739792902236&w=1500" alt="Producto 2" class="mx-auto mb-4">
-                <p>Producto 2</p>
-            </div>
-            <div class="producto fade-in bg-white shadow-lg p-6 rounded-lg">
-                <img src="https://static.zara.net/assets/public/92b5/291d/be084ee5bbf5/9d33495411c7/07484051407-p/07484051407-p.jpg?ts=1738690196340&w=1500" alt="Producto 3" class="mx-auto mb-4">
-                <p>Producto 3</p>
-            </div>
-        </div>
+    <section class="mt-6">
+      <h2 class="text-lg font-semibold mb-2">Nueva Temporada</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="border rounded-lg h-32"></div>
+        <div class="border rounded-lg h-32"></div>
+      </div>
+      <div class="flex justify-end mt-2">
+        <button class="text-2xl">▶</button>
+      </div>
     </section>
+  </main>
 
-    
-
+  <!-- Menú inferior -->
+  <footer class="flex justify-between items-center border-t p-4">
+    <button class="text-2xl">☰</button>
+    <button class="text-2xl">↩</button>
+    <button class="text-2xl">🛒</button>
+  </footer>
 </body>
 </html>
